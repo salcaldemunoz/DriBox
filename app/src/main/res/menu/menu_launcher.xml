@@ -1,0 +1,45 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="drivebox.sergio.dribox.Launcher">
+
+    <item android:id="@+id/login"
+        android:title="@string/login"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/driveMenu"
+        android:title="Drive"
+        android:orderInCategory="200"
+        app:showAsAction="never">
+
+        <menu>
+            <item android:id="@+id/crear_drive"
+                android:title="@string/crear_drive"
+                android:orderInCategory="100"
+                app:showAsAction="never"/>
+
+            <item android:id="@+id/seleccionar_drive"
+                android:title="@string/seleccionar_drive"
+                android:orderInCategory="200"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+    <item android:id="@+id/dropboxMenu"
+        android:title="Dropbox"
+        android:orderInCategory="300"
+        app:showAsAction="never">
+        <menu>
+            <item android:id="@+id/crear_dropbox"
+                android:title="@string/crear_archivo_dropbox"
+                app:showAsAction="never"
+                android:orderInCategory="100" />
+
+            <item android:id="@+id/seleccionar_dropbox"
+                android:title="@string/seleccionar_archivo_dropbox"
+                app:showAsAction="never"
+                android:orderInCategory="200" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">DriBox</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_dri_box">DriBox</string>
+    <string name="preference_file_key">Logins</string>
+    <string name="title_activity_launcher">launcher</string>
+    <string name="login_guardado">LOGIN_GUARDADO</string>
+    <string name="drive_user">DRIVE_USER</string>
+    <string name="drive_pass">DRIVE_PASS</string>
+    <string name="dropbox_user">DROPBOX_USER</string>
+    <string name="dropbox_pass">DROPBOX_PASS</string>
+    <string name="usuario">Usuario</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="title_activity_drive_box">DriveBox</string>
+    <string name="DriveBox">DriveBox</string>
+    <string name="title_activity_prueba">prueba</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="cambiar_sesion">Cambiar sesión</string>
+    <string name="tamañoArchivo">Tam</string>
+    <string name="fechaModArchivo">Fecha</string>
+    <string name="propietarioArchivo">Prop</string>
+    <string name="nombreArchivo">Nombre</string>
+    <string name="iconoNombre">Tipo</string>
+    <string name="title_activity_login">Login</string>
+    <string name="tipoFuente">Fuente</string>
+    <string name="login">Login</string>
+
+    <string name="action_scan">UPLOAD file</string>
+    <string name="action_list">DOWNLOAD all files</string>
+    <string name="action_delete">DELETE all files</string>
+    <string name="action_account">Select Google Account…</string>
+
+    <string name="disp_text">
+      \n\n
+      1/ UPLOAD (upload icon) uploads a text file to Google Drive, creating a simple tree
+         directory structure in the process.\n
+         The createTree() method allows for testing of different CRUD primitives (search,
+         create folder, etc…) in the process.\n\n
+      2/ DOWNLOAD (download icon) scans the tree created by the createTree() method. If the
+         object is a file, it\'s metadata is updated (description field), the content is
+         downloaded.\n\n
+      3/ DELETE (X - delete icon) scans the tree created by the createTree() method and deletes
+         all the files and folders in the process\n
+    </string>
+
+    <string name="err_auth_sha">CHECK PackageName / SHA1\nin Developers Console!</string>
+    <string name="err_auth_dono">UNSPECIFIED GOOGLE DRIVE\nACCESS FAILURE!</string>
+    <string name="err_auth_accpick">NO ACCOUNT SELECTED!</string>
+    <string name="err_auth_nogo">ACCESS NOT AUTHORIZED!</string>
+    <string name="crear_drive">Crear drive</string>
+    <string name="seleccionar_drive">Seleccionar archivo Drive</string>
+    <string name="crear_archivo_dropbox">Crear archivo Dropbox</string>
+    <string name="seleccionar_archivo_dropbox">Seleccionar archivo Dropbox</string>
+    <string name="title_activity_importar_ficheros_adrive">importarFicherosADrive</string>
+    <string name="title_activity_lista_dropbox">listaDropbox</string>
+    <string name="tipoArchivo">Tipo</string>
+    <string name="Dropbox">Dropbox</string>
+</resources>
