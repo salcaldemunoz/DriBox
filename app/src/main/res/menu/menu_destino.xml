@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/Destino"
-        android:title="Subir a nube"/>
+    <item android:id="@+id/destinoDrive"
+        android:title="Subir a drive"/>
+    <item android:id="@+id/destinoDropbox"
+        android:title="Subir a Dropbox"/>
 
 </menu>
