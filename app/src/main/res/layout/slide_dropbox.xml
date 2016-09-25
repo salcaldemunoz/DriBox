@@ -20,5 +20,12 @@
         android:text="Iniciar sesion"
         android:id="@+id/sesionDropbox"
         android:layout_gravity="center_horizontal"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recordar"
+        android:id="@+id/recordarDropbox"
+        android:checked="false"
+        android:layout_gravity="center_horizontal"/>
 
 </LinearLayout>

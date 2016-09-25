@@ -55,4 +55,6 @@
     <string name="title_activity_lista_dropbox">listaDropbox</string>
     <string name="tipoArchivo">Tipo</string>
     <string name="Dropbox">Dropbox</string>
+    <string name="explorador_dropbox">Explorador Dropbox</string>
+    <string name="recordar">Recordar cuenta</string>
 </resources>

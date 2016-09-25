@@ -29,17 +29,6 @@
         android:title="Dropbox"
         android:orderInCategory="300"
         app:showAsAction="never">
-        <menu>
-            <item android:id="@+id/crear_dropbox"
-                android:title="@string/crear_archivo_dropbox"
-                app:showAsAction="never"
-                android:orderInCategory="100" />
-
-            <item android:id="@+id/seleccionar_dropbox"
-                android:title="@string/seleccionar_archivo_dropbox"
-                app:showAsAction="never"
-                android:orderInCategory="200" />
-        </menu>
     </item>
 
 </menu>

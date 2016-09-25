@@ -6,4 +6,6 @@
     <color name="verdeDrive">#0EA460</color>
     <color name="amarilloDrive">#FDD664</color>
     <color name="azulDrive">#3578E9</color>
+    <color name="negro_semitransparente">#B2000000</color>
+    <color name="blanco">#fafafa</color>
 </resources>
