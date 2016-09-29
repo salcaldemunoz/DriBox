@@ -1,61 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:fab="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context="drivebox.sergio.dribox.DriBox">
+    android:fitsSystemWindows="true">
 
-    <android.support.design.widget.AppBarLayout
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context="drivebox.sergio.dribox.DriBox">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+
+        <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay"
-            />
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
 
 
-    </android.support.design.widget.AppBarLayout>
+        <include layout="@layout/content_dri_box" />
 
-    <include layout="@layout/content_dri_box" />
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/menu_fab_dropbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="@dimen/fab_margin"
+            app:fab_labelStyle="@style/Etiquetas"
+            fab:fab_addButtonColorNormal="?attr/colorPrimary"
+            fab:fab_addButtonSize="normal"
+            fab:fab_labelsPosition="left">
 
-    <com.getbase.floatingactionbutton.FloatingActionsMenu
-        android:id="@+id/menu_fab_dropbox"
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/add_file_drive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="?attr/colorAccent"
+                fab:fab_icon="@drawable/googledrive"
+                fab:fab_size="mini"
+                fab:fab_title="Seleccionar archivo Drive" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/add_file_dropbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="?attr/colorAccent"
+                fab:fab_icon="@drawable/dropbox"
+                fab:fab_size="mini"
+                fab:fab_title="Seleccionar archivo Dropbox" />
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+    </android.support.design.widget.CoordinatorLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navview"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end|bottom"
-        android:layout_margin="@dimen/fab_margin"
-        app:fab_labelStyle="@style/Etiquetas"
-        fab:fab_addButtonColorNormal="?attr/colorPrimary"
-        fab:fab_addButtonSize="normal"
-        fab:fab_labelsPosition="left"
-        >
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/cab_contenido_desplegable"
+        app:menu="@menu/menu_launcher"/>
+</android.support.v4.widget.DrawerLayout>
 
-        <com.getbase.floatingactionbutton.FloatingActionButton
-            android:id="@+id/add_file_drive"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            fab:fab_colorNormal="?attr/colorAccent"
-            fab:fab_icon="@drawable/googledrive"
-            fab:fab_size="mini"
-            fab:fab_title="Seleccionar archivo Drive" />
 
-        <com.getbase.floatingactionbutton.FloatingActionButton
-            android:id="@+id/add_file_dropbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            fab:fab_colorNormal="?attr/colorAccent"
-            fab:fab_icon="@drawable/dropbox"
-            fab:fab_size="mini"
-            fab:fab_title="Seleccionar archivo Dropbox" />
-
-    </com.getbase.floatingactionbutton.FloatingActionsMenu>
-
-</android.support.design.widget.CoordinatorLayout>

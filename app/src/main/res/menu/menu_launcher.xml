@@ -6,7 +6,8 @@
     <item android:id="@+id/login"
         android:title="@string/login"
         android:orderInCategory="100"
-        app:showAsAction="never"/>
+        app:showAsAction="never"
+        android:icon="@drawable/login"/>
 
     <item android:id="@+id/driveMenu"
         android:title="Drive"
@@ -17,18 +18,27 @@
             <item android:id="@+id/crear_drive"
                 android:title="@string/crear_drive"
                 android:orderInCategory="100"
-                app:showAsAction="never"/>
+                app:showAsAction="never"
+                android:icon="@drawable/driveadd"/>
 
             <item android:id="@+id/seleccionar_drive"
                 android:title="@string/seleccionar_drive"
                 android:orderInCategory="200"
-                app:showAsAction="never"/>
+                app:showAsAction="never"
+                android:icon="@drawable/download"/>
         </menu>
     </item>
     <item android:id="@+id/dropboxMenu"
         android:title="Dropbox"
         android:orderInCategory="300"
-        app:showAsAction="never">
+        app:showAsAction="never"
+        android:icon="@drawable/dropbox">
+        <menu>
+            <item android:id="@+id/exploradordropbox"
+                android:title="@string/explorador_dropbox"
+                app:showAsAction="never"
+                android:icon="@drawable/dropbox"/>
+        </menu>
     </item>
 
 </menu>

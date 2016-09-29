@@ -8,4 +8,6 @@
     <color name="azulDrive">#3578E9</color>
     <color name="negro_semitransparente">#B2000000</color>
     <color name="blanco">#fafafa</color>
+    <color name="naranja_slide_drive">#FFA000</color>
+    <color name="azul_slide_dropbox">#ccdcf5</color>
 </resources>
