@@ -2,7 +2,6 @@
     <string name="app_name">DriBox</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_dri_box">DriBox</string>
-    <string name="preference_file_key">Logins</string>
     <string name="title_activity_launcher">launcher</string>
     <string name="login_guardado">LOGIN_GUARDADO</string>
     <string name="drive_user">DRIVE_USER</string>
@@ -19,38 +18,22 @@
     <string name="iconoNombre">Tipo</string>
     <string name="title_activity_login">Login</string>
     <string name="tipoFuente">Fuente</string>
-    <string name="login">Login</string>
-
-    <string name="action_scan">UPLOAD file</string>
-    <string name="action_list">DOWNLOAD all files</string>
-    <string name="action_delete">DELETE all files</string>
-    <string name="action_account">Select Google Account…</string>
-
-    <string name="disp_text">
-      \n\n
-      1/ UPLOAD (upload icon) uploads a text file to Google Drive, creating a simple tree
-         directory structure in the process.\n
-         The createTree() method allows for testing of different CRUD primitives (search,
-         create folder, etc…) in the process.\n\n
-      2/ DOWNLOAD (download icon) scans the tree created by the createTree() method. If the
-         object is a file, it\'s metadata is updated (description field), the content is
-         downloaded.\n\n
-      3/ DELETE (X - delete icon) scans the tree created by the createTree() method and deletes
-         all the files and folders in the process\n
-    </string>
+    <string name="cambiarsesion">Cambiar Sesión</string>
 
     <string name="err_auth_sha">CHECK PackageName / SHA1\nin Developers Console!</string>
     <string name="err_auth_dono">UNSPECIFIED GOOGLE DRIVE\nACCESS FAILURE!</string>
     <string name="err_auth_accpick">NO ACCOUNT SELECTED!</string>
     <string name="err_auth_nogo">ACCESS NOT AUTHORIZED!</string>
-    <string name="crear_drive">Crear archivo Drive</string>
-    <string name="seleccionar_drive">Seleccionar archivo Drive</string>
-    <string name="crear_archivo_dropbox">Crear archivo Dropbox</string>
-    <string name="seleccionar_archivo_dropbox">Seleccionar archivo Dropbox</string>
-    <string name="title_activity_importar_ficheros_adrive">importarFicherosADrive</string>
-    <string name="title_activity_lista_dropbox">listaDropbox</string>
+    <string name="crear_drive">Crear fichero de texto Drive</string>
+    <string name="seleccionar_drive">Seleccionar fichero de texto Drive</string>
+    <string name="crear_archivo_dropbox">Crear fichero de texto Dropbox</string>
+    <string name="seleccionar_archivo_dropbox">Seleccionar fichero de texto Dropbox</string>
+    <string name="title_activity_explorador_dropbox">Explorador de Dropbox</string>
     <string name="tipoArchivo">Tipo</string>
     <string name="Dropbox">Dropbox</string>
     <string name="explorador_dropbox">Explorador Dropbox</string>
     <string name="recordar">Recordar cuenta</string>
+    <string name="salir">Salir</string>
+    <string name="mas">Más</string>
+    <string name="title_activity_explorador_drive">Explorador de Drive</string>
 </resources>

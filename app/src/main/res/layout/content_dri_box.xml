@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="drivebox.sergio.dribox.DriBox"
+    tools:context="drivebox.sergio.dribox.dribox.activities.DriBox"
     tools:showIn="@layout/activity_dri_box">
 
 
@@ -36,7 +36,8 @@
                 android:layout_weight="1"
                 android:id="@+id/nombreArchivo"
                 android:text="@string/nombreArchivo"
-                android:layout_gravity="center_vertical"/>
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"/>
 
             <TextView
                 android:layout_width="0px"
@@ -47,12 +48,16 @@
                 android:layout_gravity="center_vertical"/>
         </LinearLayout>
 
-
-        <ListView
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/listaDriboxRefresh"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/folderList" >
-        </ListView>
+            android:layout_height="wrap_content">
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/folderList" >
+            </ListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
 
     </LinearLayout>
 

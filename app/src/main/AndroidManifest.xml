@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -15,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Launcher"
+            android:name=".dribox.activities.Launcher"
             android:configChanges="orientation|screenSize"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
@@ -26,18 +27,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".DriBox"
+            android:name=".dribox.activities.DriBox"
             android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_dri_box"
             android:launchMode="singleTask"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ListaDropbox"
+            android:name=".dribox.activities.ExploradorDropbox"
             android:configChanges="orientation|screenSize"
-            android:label="@string/Dropbox"
-            android:launchMode="singleTask"/>
+            android:label="@string/title_activity_explorador_dropbox"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Login"
+            android:name=".dribox.login.Login"
             android:label="@string/title_activity_login"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -54,6 +56,12 @@
                 <category android:name="android.intent.category.BROWSABLE" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".dribox.activities.ExploradorDrive"
+            android:label="@string/title_activity_explorador_drive"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
     </application>
 

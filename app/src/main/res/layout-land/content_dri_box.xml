@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="drivebox.sergio.dribox.DriBox"
+    tools:context="drivebox.sergio.dribox.dribox.activities.DriBox"
     tools:showIn="@layout/activity_dri_box">
 
 

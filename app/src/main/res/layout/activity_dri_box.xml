@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
-        tools:context="drivebox.sergio.dribox.DriBox">
+        tools:context="drivebox.sergio.dribox.dribox.activities.DriBox">
 
 
         <android.support.design.widget.AppBarLayout
@@ -36,7 +36,7 @@
         <include layout="@layout/content_dri_box" />
 
         <com.getbase.floatingactionbutton.FloatingActionsMenu
-            android:id="@+id/menu_fab_dropbox"
+            android:id="@+id/menu_fab_dribox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end|bottom"
@@ -65,6 +65,20 @@
                 fab:fab_title="Seleccionar archivo Dropbox" />
 
         </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/subir_archivos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="@dimen/fab_margin"
+            android:visibility="gone"
+            fab:fab_addButtonColorNormal="?attr/colorAccent"
+            fab:fab_addButtonSize="normal"
+            fab:fab_labelsPosition="left"
+            fab:fab_colorNormal="?attr/colorAccent"
+            fab:fab_icon="@drawable/upload"/>
+
     </android.support.design.widget.CoordinatorLayout>
 
     <android.support.design.widget.NavigationView

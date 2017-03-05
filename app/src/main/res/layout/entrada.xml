@@ -16,16 +16,12 @@
         android:id="@+id/nombreArchivo"
         android:text="@string/nombreArchivo"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"
-        android:ellipsize="end"
-        android:maxLines="1"/>
+       />
     <TextView
         android:layout_width="0px"
         android:layout_height="wrap_content"
         android:layout_weight="1.5"
         android:id="@+id/fechaModArchivo"
         android:text="@string/fechaModArchivo"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:ellipsize="end"
-        android:maxLines="1"/>
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
 </LinearLayout>

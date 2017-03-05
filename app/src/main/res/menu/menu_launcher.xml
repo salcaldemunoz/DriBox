@@ -1,17 +1,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="drivebox.sergio.dribox.Launcher">
-
-    <item android:id="@+id/login"
-        android:title="@string/login"
-        android:orderInCategory="100"
-        app:showAsAction="never"
-        android:icon="@drawable/login"/>
+    tools:context="drivebox.sergio.dribox.dribox.activities.Launcher">
 
     <item android:id="@+id/driveMenu"
         android:title="Drive"
-        android:orderInCategory="200"
+        android:orderInCategory="100"
         app:showAsAction="never">
 
         <menu>
@@ -26,11 +20,17 @@
                 android:orderInCategory="200"
                 app:showAsAction="never"
                 android:icon="@drawable/download"/>
+
+            <item android:id="@+id/exploradordrive"
+                android:title="Explorador Drive"
+                android:orderInCategory="300"
+                app:showAsAction="never"
+                android:icon="@drawable/googledrive"/>
         </menu>
     </item>
     <item android:id="@+id/dropboxMenu"
         android:title="Dropbox"
-        android:orderInCategory="300"
+        android:orderInCategory="200"
         app:showAsAction="never"
         android:icon="@drawable/dropbox">
         <menu>
@@ -40,5 +40,29 @@
                 android:icon="@drawable/dropbox"/>
         </menu>
     </item>
+
+    <item
+        android:id="@+id/mas"
+        android:title="@string/mas"
+        android:orderInCategory="300"
+        app:showAsAction="never"
+        >
+        <menu>
+
+            <item android:id="@+id/login"
+                android:title="@string/cambiarsesion"
+                android:orderInCategory="100"
+                app:showAsAction="never"
+                android:icon="@drawable/login"/>
+
+            <item android:id="@+id/exit"
+            android:title="@string/salir"
+            android:orderInCategory="200"
+            app:showAsAction="never"
+            android:icon="@drawable/exit"/>
+
+        </menu>
+    </item>
+
 
 </menu>
